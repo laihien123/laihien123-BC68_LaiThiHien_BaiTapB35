@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "fontGame";
+  src: url("../font/Pony.ttf");
+}
+
+body {
+  background-image: url(./bgmovie.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.bookingMovie {
+  font-family: "fontGame";
+}
+
+.container {
+  background: rgba(77, 73, 73, 0.6);
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.ghe {
+  border: 3px solid rgb(236, 86, 121);
+  font-size: 12px;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.grid-row {
+  display: contents;
+}
+
+.rowNumber:first-child .ghe {
+  width: 45px;
+  height: 35px;
+  background: none;
+  border: none;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  font-size: 20px;
+  color: yellow;
+}
+
+.firstChar {
+  color: yellow;
+  font-size: 20px;
+  margin-right: 15px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.screen-title h1 {
+  color: yellow;
+  font-size: 40px;
+  margin-right: 15px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.screen-title p {
+  font-size: 35px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.screen {
+  border-bottom: 50px solid rgb(244, 186, 194);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 100px;
+  width: auto;
+  filter: drop-shadow(4px 30px 20px rgba(117, 71, 71, 0.5));
+  font-size: 25px;
+  color: #fff;
+  display: grid;
+  align-items: center;
+  margin: 0 10%;
+}
+
+.gheDuocChon {
+  border: 3px solid rgb(161, 223, 219);
+  background: rgb(161, 223, 219);
+  color: #000;
+  cursor: no-drop !important;
+  border-radius: 5px;
+}
+
+.gheDangChon {
+  background: rgb(220, 109, 79);
+  border: 3px solid rgb(220, 109, 79);
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.screen-seat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.screen-container {
+  display: grid;
+  grid-template-columns: repeat(13, 40px);
+  gap: 5px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.summary-container {
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+}
+
+.summary-seats {
+  margin: 20px 0;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+}
+
+.summary-item span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.summary-seats .reserved {
+  background-color: rgb(161, 223, 219);
+}
+
+.summary-seats .selected {
+  background-color: rgb(220, 109, 79);
+}
+
+.summary-seats .available {
+  background-color: white;
+  border: 3px solid rgb(236, 86, 121);
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.summary-table th,
+.summary-table td {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+}
+
+.summary-table button {
+  background: red;
+  border: none;
+  color: black;
+  padding: 3px 12px;
+}
